@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tienda sencilla</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav__elements">
+        <img src="/assets/logo.png" alt="" class="nav__img" />
+        <ul class="nav__ul">
+          <li class="ul__li">Naruto</li>
+          <li class="ul__li">One Piece</li>
+        </ul>
+        <div class="nav__carrito">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            class="carrito__icon"
+            id="carrito__icon"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"
+            />
+          </svg>
+          <div class="items__carrito" id="items__carrito">
+            <div class="carrito__compra">
+              <div class="compra">
+                <h2>Funko</h2>
+                <h2>Nombre</h2>
+                <h2>Precio</h2>
+                <h2>Cantidad</h2>
+              </div>
+              <div class="compra__añadir">
+          
+              </div>
+              <a href="#" class="compra__vaciar">Vaciar carrito</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <header class="header">
+        <div class="header__container">
+          <h1 class="container__h1">Tu tienda de funkos Favorita</h1>
+          <p class="container__p">¡¡LLevatelos ya!!</p>
+        </div>
+      </header>
+    </nav>
+
+    <main>
+      <section class="main__section wrapper" id="main__section">
+        <div class="section__cards"  id="section__cards">
+          <img src="/assets/gara.jpg" alt="" class="cards__img"  id="cards__img"/>
+          <h2 class="cards__h2">Funko POP</h2>
+          <h3 class="cards__h3" id="cards__h3">Gaara</h3>
+          <h4 class="cards__h4" id="cards__h4">14,95€</h4>
+          <a href="#" class="cards__agregar-carrito" id="cards__agregar-carrito"data-id="1">Añadir al carrito</a>
+        </div>
+        <div class="section__cards" id="section__cards" >
+          <img src="/assets/itachi.png" alt="" class="cards__img" id="cards__img" />
+          <h2 class="cards__h2">Funko POP</h2>
+          <h3 class="cards__h3" id="cards__h3">Itachi</h3>
+          <h4 class="cards__h4" id="cards__h4"> 16,95 €</h4>
+          <a href="#" class="cards__agregar-carrito" id="cards__agregar-carrito"data-id="2">Añadir al carrito</a>
+        </div>
+        <div class="section__cards" id="section__cards" >
+          <img src="/assets/kakashi.png" alt="" class="cards__img" id="cards__img" />
+          <h2 class="cards__h2">Funko POP</h2>
+          <h3 class="cards__h3" id="cards__h3">kakashi</h3>
+          <h4 class="cards__h4" id="cards__h4">16,95€</h4>
+          <a href="#" class="cards__agregar-carrito" id="cards__agregar-carrito"data-id="3">Añadir al carrito</a>
+        </div>
+        <div class="section__cards" id="section__cards" >
+          <img src="/assets/naruto-sixth.jpg" alt="" class="cards__img" id="cards__img" />
+          <h2 class="cards__h2">Funko POP</h2>
+          <h3 class="cards__h3" id="cards__h3">Naruto</h3>
+          <h4 class="cards__h4" id="cards__h4">14,95€</h4>
+          <a href="#" class="cards__agregar-carrito" id="cards__agregar-carrito"data-id="4">Añadir al carrito</a>
+        </div>
+        <div class="section__cards" id="section__cards" >
+          <img src="/assets/shikamaru.jpg" alt="" class="cards__img" id="cards__img" />
+          <h2 class="cards__h2">Funko POP</h2>
+          <h3 class="cards__h3" id="cards__h3">shikamaru</h3>
+          <h4 class="cards__h4" id="cards__h4">14,95€</h4>
+          <a href="#" class="cards__agregar-carrito" id="cards__agregar-carrito"data-id="5">Añadir al carrito</a>
+        </div>
+        <div class="section__cards" id="section__cards" >
+          <img src="/assets/doflamingo.jpg" alt="" class="cards__img" id="cards__img" />
+          <h2 class="cards__h2">Funko POP</h2>
+          <h3 class="cards__h3" id="cards__h3">Doflamingo</h3>
+          <h4 class="cards__h4" id="cards__h4">12,90€</h4>
+          <a href="#" class="cards__agregar-carrito" id="cards__agregar-carrito"data-id="6">Añadir al carrito</a>
+        </div>
+        <div class="section__cards" id="section__cards" >
+          <img src="/assets/luffy.jpg" alt="" class="cards__img" id="cards__img" />
+          <h2 class="cards__h2">Funko POP</h2>
+          <h3 class="cards__h3" id="cards__h3">Luffy</h3>
+          <h4 class="cards__h4" id="cards__h4">14,95€</h4>
+          <a href="#" class="cards__agregar-carrito" id="cards__agregar-carrito"data-id="7">Añadir al carrito</a>
+        </div>
+        <div class="section__cards" id="section__cards" >
+          <img src="/assets/sanji.jpg" alt="" class="cards__img" id="cards__img" />
+          <h2 class="cards__h2">Funko POP</h2>
+          <h3 class="cards__h3" id="cards__h3">Sanji</h3>
+          <h4 class="cards__h4" id="cards__h4">12,95€</h4>
+          <a href="#" class="cards__agregar-carrito" id="cards__agregar-carrito"data-id="8">Añadir al carrito</a>
+        </div>
+        <div class="section__cards" id="section__cards" >
+          <img src="/assets/usopp.jpg" alt="" class="cards__img" id="cards__img" />
+          <h2 class="cards__h2">Funko POP</h2>
+          <h3 class="cards__h3" id="cards__h3">Usopp</h3>
+          <h4 class="cards__h4" id="cards__h4">14,95€</h4>
+          <a href="#" class="cards__agregar-carrito" id="cards__agregar-carrito"data-id="9">Añadir al carrito</a>
+        </div>
+        <div class="section__cards" id="section__cards">
+          <img src="/assets/zoro.jpg" alt="" class="cards__img" id="cards__img" />
+          <h2 class="cards__h2">Funko POP</h2>
+          <h3 class="cards__h3" id="cards__h3">Zoro</h3>
+          <h4 class="cards__h4" id="cards__h4">16,95€</h4>
+          <a href="#" class="cards__agregar-carrito" id="cards__agregar-carrito"data-id="10">Añadir al carrito</a>
+        </div>
+      </section>
+    </main>
+    <script src="/js/app.js"></script>
+  </body>
+</html>
