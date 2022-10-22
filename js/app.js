@@ -4,6 +4,9 @@ const items__carrito = document.getElementById('items__carrito')
 const añadir__Carrito = document.querySelector('#main__section')
 const compra__añadir = document.querySelector('.compra__añadir')
 const vaciar__carrito = document.querySelector('.compra__vaciar')
+
+const nav__ul = document.querySelector('.nav__ul')
+
 let listaCarrito = [];
 // Eventos
 
@@ -11,15 +14,13 @@ carrito__icon.addEventListener('click', mostrarTienda);
 añadir__Carrito.addEventListener('click', añadirCarrito)
 vaciar__carrito.addEventListener('click', borrarCarrito)
 items__carrito.addEventListener('click', eliminarFunko)
+
+nav__ul.addEventListener('click', mostrarFunkos)
 // Funciones
 
 function mostrarTienda (){
     items__carrito.classList.toggle("items__carrito-activo")
 }
-
-
-
-
 function añadirCarrito(e){
     console.log(e.target);
     e.preventDefault()
@@ -92,9 +93,29 @@ function borrarCarrito(){
     console.log(listaCarrito);
 }
 
-
 function limpiarCarrito() {
     while (compra__añadir.firstChild) {
       compra__añadir.removeChild(compra__añadir.firstChild);
     }
   }
+
+function mostrarFunkos(funko){
+    const articleOnepiece = document.querySelector('.main-section-article__onePiece')
+    const articleNaruto = document.querySelector('.main-section-article__naruto')
+
+    if (funko.target.classList.contains('naruto')) {
+        articleOnepiece.classList.toggle('hidden')
+        console.log('hola mundo');
+        if ("click") {
+            articleNaruto.classList.remove('hidden')
+        }
+        
+    }
+    if (funko.target.classList.contains('onePiece')) {
+        articleNaruto.classList.toggle('hidden')
+        console.log('hola mundo');
+        if ("click") {
+            articleOnepiece.classList.remove('hidden')
+        }
+    }
+}

@@ -149,10 +149,22 @@ img {
 /* main */
 .main__section {
   background-color: white;
+  
+}
+.main-section-article__naruto{
   padding: 0.8em;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 0.8em;
+}
+.main-section-article__onePiece{
+  padding: 0.8em;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.8em;
+}
+.hidden{
+  display: none;
 }
 .wrapper{
   max-width: 1200px;
@@ -186,6 +198,8 @@ img {
   color: white;
   border-radius: 0.4em;
 }
+
+
 
 @media screen and (min-width: 1200px){
   .main__section{
